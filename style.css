@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #041334;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/***header section****/
+
+.header {
+  height: 10rem;
+  width: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+  max-width: 124rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  padding: 0 1rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.logo {
+  width: 28rem;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav .search-logo {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/* market cap bitcoin price **/
+
+.secondary-heading {
+  font-size: 2.4rem;
+  color: #fff;
+  padding-top: 8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding-inline: 10rem;
+}
+
+.text-green {
+  color: #14ff00;
+}
+
+.text-red {
+  color: #ff0000;
+}
+
+.table-heading {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.4rem;
+  justify-content: center;
+  margin-top: 6.5rem;
+  font-weight: bold;
+}
+
+.crypto-currencies-list {
+  display: grid;
+  padding-top: 3.6rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.4rem;
+}
+
+.crypto-currencies-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.crypto-currencies-list li span {
+  font-size: 1.6rem;
+  color: #858585;
+  font-weight: normal;
+}
+.coin-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.chart-btc-trend {
+  width: 5.8rem;
+}
+
+.semibold {
+  font-weight: 600;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-primary {
+  background: linear-gradient(to right bottom, #3dd8ee, #0997e8);
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  padding: 1.2rem 5rem;
+  margin: 5.2rem;
+}
+
+/* map**/
+
+.map {
+  background-color: #00092a;
+}
+
+.container {
+  max-width: 124rem;
+  margin-inline: auto;
+  padding: 5.2rem 0;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.map-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.font-map-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.map-icon-image {
+  background-color: #0f1535;
+  padding: 3rem 2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.map-icon-section {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 3.5rem;
+}
+.map-icon-section p:last-child {
+  font-size: 1.6rem;
+}
+
+.reasons-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.reasons-img-1 {
+  width: 70%;
+  justify-self: center;
+  z-index: 11;
+}
+
+.reasons-img-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+
+.grid-4-cols {
+  grid-template-columns: 6fr 2fr 2fr 2fr;
+  align-items: start;
+}
+
+footer {
+  background-color: #00092a;
+  padding: 7rem 0;
+}
+
+footer h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+footer li a {
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer li {
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/**responsive***/
+
+@media (max-width: 82em) {
+  .container {
+    max-width: 114rem;
+    padding-inline: 2.4rem;
+  }
+}
+
+@media (max-width: 79em) {
+  .nav {
+    max-width: 100%;
+    margin-inline: 2rem;
+  }
+}
+
+@media (max-width: 67em) {
+  .container {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .crypto-currencies-list li {
+    font-size: 1.8rem;
+  }
+
+  .heading-primary {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 60em) {
+  .container {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .crypto-currencies-list li {
+    font-size: 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6rem !important;
+    column-gap: 3.2rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .crypto-currencies-list {
+    display: grid;
+    padding-top: 3.6rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 48em) {
+  .container {
+    max-width: 90%;
+    padding-inline: 1rem;
+  }
+
+  html {
+    font-size: 56%;
+  }
+
+  .grid-4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 48em) {
+  .container {
+    max-width: 100%;
+    padding-inline: 1.5rem;
+  }
+
+  .grid-4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .crypto-currencies-list,
+  .table-heading {
+    display: grid;
+    padding-top: 3.6rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .table-heading li:last-child {
+    display: none;
+  }
+  .crypto-currencies-list li:last-child {
+    display: none;
+  }
+
+  .crypto-currencies-list span {
+    display: none;
+  }
+
+  .secondary-heading {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .secondary-heading + P {
+    text-align: center;
+  }
+
+  footer {
+    padding: 3rem 0 2rem 0;
+  }
+}
