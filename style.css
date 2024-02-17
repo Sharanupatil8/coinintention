@@ -371,3 +371,24 @@ footer li {
     padding: 3rem 0 2rem 0;
   }
 }
+
+@media (max-width: 33em) {
+  .coin-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .crypto-currencies-list li:nth-last-child(2) {
+    display: none;
+  }
+
+  .table-heading li:nth-last-child(2) {
+    display: none;
+  }
+  .crypto-currencies-list,
+  .table-heading {
+    display: grid;
+    padding-top: 3.6rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
